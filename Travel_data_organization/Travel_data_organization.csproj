@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{354ACC15-B178-475C-B95E-554BFE2AD455}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Travel_data_organization</RootNamespace>
+    <AssemblyName>Travel_data_organization</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\ClassLocation.cs" />
+    <Compile Include="BL\ClassManagment.cs" />
+    <Compile Include="BL\ClassReport.cs" />
+    <Compile Include="BL\ClassSetting.cs" />
+    <Compile Include="BL\ClassUsers.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\FRM_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_About.Designer.cs">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddCategory.Designer.cs">
+      <DependentUpon>FRM_AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddCity.Designer.cs">
+      <DependentUpon>FRM_AddCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddColor.Designer.cs">
+      <DependentUpon>FRM_AddColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddCompany.Designer.cs">
+      <DependentUpon>FRM_AddCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddCountry.Designer.cs">
+      <DependentUpon>FRM_AddCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddItemFromGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddItemFromGallery.Designer.cs">
+      <DependentUpon>FRM_AddItemFromGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddProduct.Designer.cs">
+      <DependentUpon>FRM_AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AddType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AddType.Designer.cs">
+      <DependentUpon>FRM_AddType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_BackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_BackUp.Designer.cs">
+      <DependentUpon>FRM_BackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_CategoryUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CategoryUpdate.Designer.cs">
+      <DependentUpon>FRM_CategoryUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ChangPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ChangPassword.Designer.cs">
+      <DependentUpon>FRM_ChangPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_CityManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CityManagment.Designer.cs">
+      <DependentUpon>FRM_CityManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ColorManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ColorManagment.Designer.cs">
+      <DependentUpon>FRM_ColorManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Company_Manag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Company_Manag.Designer.cs">
+      <DependentUpon>FRM_Company_Manag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Com_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Com_Image.Designer.cs">
+      <DependentUpon>FRM_Com_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_CountryManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CountryManagment.Designer.cs">
+      <DependentUpon>FRM_CountryManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Main.Designer.cs">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Pic1Zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Pic1Zoom.Designer.cs">
+      <DependentUpon>FRM_Pic1Zoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ProductImageManag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ProductImageManag.Designer.cs">
+      <DependentUpon>FRM_ProductImageManag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ProductImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ProductImageView.Designer.cs">
+      <DependentUpon>FRM_ProductImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ProductUpdateDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ProductUpdateDet.Designer.cs">
+      <DependentUpon>FRM_ProductUpdateDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Report.Designer.cs">
+      <DependentUpon>FRM_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SignIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SignIN.Designer.cs">
+      <DependentUpon>FRM_SignIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_TypeManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_TypeManagment.Designer.cs">
+      <DependentUpon>FRM_TypeManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\FRM_About.resx">
+      <DependentUpon>FRM_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddCategory.resx">
+      <DependentUpon>FRM_AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddCity.resx">
+      <DependentUpon>FRM_AddCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddColor.resx">
+      <DependentUpon>FRM_AddColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddCompany.resx">
+      <DependentUpon>FRM_AddCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddCountry.resx">
+      <DependentUpon>FRM_AddCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddItemFromGallery.resx">
+      <DependentUpon>FRM_AddItemFromGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddProduct.resx">
+      <DependentUpon>FRM_AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AddType.resx">
+      <DependentUpon>FRM_AddType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_BackUp.resx">
+      <DependentUpon>FRM_BackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CategoryUpdate.resx">
+      <DependentUpon>FRM_CategoryUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ChangPassword.resx">
+      <DependentUpon>FRM_ChangPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CityManagment.resx">
+      <DependentUpon>FRM_CityManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ColorManagment.resx">
+      <DependentUpon>FRM_ColorManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Company_Manag.resx">
+      <DependentUpon>FRM_Company_Manag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Com_Image.resx">
+      <DependentUpon>FRM_Com_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CountryManagment.resx">
+      <DependentUpon>FRM_CountryManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Main.resx">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Pic1Zoom.resx">
+      <DependentUpon>FRM_Pic1Zoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ProductImageManag.resx">
+      <DependentUpon>FRM_ProductImageManag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ProductImageView.resx">
+      <DependentUpon>FRM_ProductImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ProductUpdateDet.resx">
+      <DependentUpon>FRM_ProductUpdateDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Report.resx">
+      <DependentUpon>FRM_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SignIN.resx">
+      <DependentUpon>FRM_SignIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_TypeManagment.resx">
+      <DependentUpon>FRM_TypeManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.ico" />
+    <None Include="Resources\s1.jpg" />
+    <None Include="Resources\AA.jpg" />
+    <None Include="Resources\s2.jpg" />
+    <None Include="Resources\army-navy-shop-9.jpg" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\About.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
